@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "deco/*": ["./src/*"],
-      "deco": ["./src/index.ts"]
+      "decoa/*": ["./src/*"],
+      "decoa": ["./src/index.ts"]
     },
     "noEmit": true,
 

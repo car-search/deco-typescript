@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^deco(/.*)?',
+              regex: '^decoa(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],
