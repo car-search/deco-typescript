@@ -55,12 +55,12 @@ $ cd deco-typescript
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link decoa
+$ yarn link @car-search/decod
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link --global decoa
+$ pnpm link --global @car-search/decod
 ```
 
 ## Running tests

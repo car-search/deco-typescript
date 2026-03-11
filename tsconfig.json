@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "decoa/*": ["./src/*"],
-      "decoa": ["./src/index.ts"]
+      "@car-search/decod/*": ["./src/*"],
+      "@car-search/decod": ["./src/index.ts"]
     },
     "noEmit": true,
 
