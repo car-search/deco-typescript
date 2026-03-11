@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^decoa(/.*)?',
+              regex: '^@car-search/decod(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],

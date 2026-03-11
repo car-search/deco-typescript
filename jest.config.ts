@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^decoa$': '<rootDir>/src/index.ts',
-    '^decoa/(.*)$': '<rootDir>/src/$1',
+    '^@car-search/decod$': '<rootDir>/src/index.ts',
+    '^@car-search/decod/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',

@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "decoa/*": ["./dist/src/*"],
-      "decoa": ["./dist/src/index.ts"]
+      "@car-search/decod/*": ["./dist/src/*"],
+      "@car-search/decod": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,

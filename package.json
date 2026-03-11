@@ -1,5 +1,5 @@
 {
-  "name": "decoa",
+  "name": "@car-search/decod",
   "version": "0.0.2",
   "description": "The official TypeScript library for the Deco API",
   "author": "Deco <>",
