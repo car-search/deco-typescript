@@ -1,6 +1,6 @@
 import fs from 'fs';
-import type { ResponseLike } from 'deco/internal/to-file';
-import { toFile } from 'deco/core/uploads';
+import type { ResponseLike } from 'decoa/internal/to-file';
+import { toFile } from 'decoa/core/uploads';
 import { File } from 'node:buffer';
 
 class MyClass {
@@ -97,7 +97,7 @@ describe('missing File error message', () => {
   });
 
   test('is thrown', async () => {
-    const uploads = await import('deco/core/uploads');
+    const uploads = await import('decoa/core/uploads');
     await expect(
       uploads.toFile(mockResponse({ url: 'https://example.com/my/audio.mp3' })),
     ).rejects.toMatchInlineSnapshot(

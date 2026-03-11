@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'deco/core/api-promise';
+import { APIPromise } from 'decoa/core/api-promise';
 
 import util from 'node:util';
-import Deco from 'deco';
-import { APIUserAbortError } from 'deco';
+import Deco from 'decoa';
+import { APIUserAbortError } from 'decoa';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

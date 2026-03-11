@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import Deco from 'deco';
+import Deco from 'decoa';
 
 const client = new Deco({
   apiKey: 'My API Key',

@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "deco/*": ["./dist/src/*"],
-      "deco": ["./dist/src/index.ts"]
+      "decoa/*": ["./dist/src/*"],
+      "decoa": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,
