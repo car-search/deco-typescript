@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.3 (2026-03-11)
+
+Full Changelog: [v0.0.2...v0.0.3](https://github.com/car-search/deco-typescript/compare/v0.0.2...v0.0.3)
+
+### Chores
+
+* update SDK settings ([82155d9](https://github.com/car-search/deco-typescript/commit/82155d9ea95e87a10d1c2237a01804f48f77556a))
+
 ## 0.0.2 (2026-03-11)
 
 Full Changelog: [v0.0.1...v0.0.2](https://github.com/car-search/deco-typescript/compare/v0.0.1...v0.0.2)

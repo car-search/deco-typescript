@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'decoa/internal/uploads';
-import { toFile } from 'decoa/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@car-search/decod/internal/uploads';
+import { toFile } from '@car-search/decod/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {

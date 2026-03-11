@@ -1,6 +1,6 @@
 {
-  "name": "decoa",
-  "version": "0.0.2",
+  "name": "@car-search/decod",
+  "version": "0.0.3",
   "description": "The official TypeScript library for the Deco API",
   "author": "Deco <>",
   "types": "dist/index.d.ts",
