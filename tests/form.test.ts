@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'deco/internal/uploads';
-import { toFile } from 'deco/core/uploads';
+import { multipartFormRequestOptions, createForm } from 'decoa/internal/uploads';
+import { toFile } from 'decoa/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
