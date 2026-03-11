@@ -1,6 +1,6 @@
 {
   "name": "decoa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "The official TypeScript library for the Deco API",
   "author": "Deco <>",
   "types": "dist/index.d.ts",
