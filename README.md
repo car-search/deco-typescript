@@ -1,0 +1,1 @@
+# deco-typescript
