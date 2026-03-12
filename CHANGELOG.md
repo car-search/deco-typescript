@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.1.0 (2026-03-12)
+
+Full Changelog: [v0.0.3...v0.1.0](https://github.com/car-search/deco-typescript/compare/v0.0.3...v0.1.0)
+
+### Features
+
+* **api:** manual updates ([fe84591](https://github.com/car-search/deco-typescript/commit/fe84591d022577c52977ae213148af92539d7bfa))
+
 ## 0.0.3 (2026-03-11)
 
 Full Changelog: [v0.0.2...v0.0.3](https://github.com/car-search/deco-typescript/compare/v0.0.2...v0.0.3)
