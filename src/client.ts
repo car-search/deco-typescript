@@ -17,7 +17,7 @@ import * as Errors from './core/error';
 import * as Uploads from './core/uploads';
 import * as API from './resources/index';
 import { APIPromise } from './core/api-promise';
-import { Process, ProcessRetrieveResponse } from './resources/process';
+import { Process, ProcessRetrieveAnthropicResponse, ProcessRetrieveResponse } from './resources/process';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
@@ -732,5 +732,9 @@ Deco.Process = Process;
 export declare namespace Deco {
   export type RequestOptions = Opts.RequestOptions;
 
-  export { Process as Process, type ProcessRetrieveResponse as ProcessRetrieveResponse };
+  export {
+    Process as Process,
+    type ProcessRetrieveResponse as ProcessRetrieveResponse,
+    type ProcessRetrieveAnthropicResponse as ProcessRetrieveAnthropicResponse,
+  };
 }
