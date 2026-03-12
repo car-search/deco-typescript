@@ -7,10 +7,10 @@ const client = new Deco({
   baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010',
 });
 
-describe('resource anthropic', () => {
+describe('resource processAnthropic', () => {
   // Mock server tests are disabled
   test.skip('retrieve', async () => {
-    const responsePromise = client.process.anthropic.retrieve(0);
+    const responsePromise = client.processAnthropic.retrieve(0);
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;

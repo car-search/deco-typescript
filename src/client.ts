@@ -17,7 +17,8 @@ import * as Errors from './core/error';
 import * as Uploads from './core/uploads';
 import * as API from './resources/index';
 import { APIPromise } from './core/api-promise';
-import { Process, ProcessRetrieveResponse } from './resources/process/process';
+import { Process, ProcessRetrieveUserRequestResponse } from './resources/process';
+import { ProcessAnthropic, ProcessAnthropicRetrieveResponse } from './resources/process-anthropic';
 import { type Fetch } from './internal/builtin-types';
 import { HeadersLike, NullableHeaders, buildHeaders } from './internal/headers';
 import { FinalRequestOptions, RequestOptions } from './internal/request-options';
@@ -725,12 +726,22 @@ export class Deco {
   static toFile = Uploads.toFile;
 
   process: API.Process = new API.Process(this);
+  processAnthropic: API.ProcessAnthropic = new API.ProcessAnthropic(this);
 }
 
 Deco.Process = Process;
+Deco.ProcessAnthropic = ProcessAnthropic;
 
 export declare namespace Deco {
   export type RequestOptions = Opts.RequestOptions;
 
-  export { Process as Process, type ProcessRetrieveResponse as ProcessRetrieveResponse };
+  export {
+    Process as Process,
+    type ProcessRetrieveUserRequestResponse as ProcessRetrieveUserRequestResponse,
+  };
+
+  export {
+    ProcessAnthropic as ProcessAnthropic,
+    type ProcessAnthropicRetrieveResponse as ProcessAnthropicRetrieveResponse,
+  };
 }

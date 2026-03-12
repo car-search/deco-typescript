@@ -9,8 +9,8 @@ const client = new Deco({
 
 describe('resource process', () => {
   // Mock server tests are disabled
-  test.skip('retrieve', async () => {
-    const responsePromise = client.process.retrieve(0);
+  test.skip('retrieveUserRequest', async () => {
+    const responsePromise = client.process.retrieveUserRequest(0);
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
