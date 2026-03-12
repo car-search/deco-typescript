@@ -26,7 +26,7 @@ const client = new Deco({
   apiKey: process.env['DECO_API_KEY'], // This is the default and can be omitted
 });
 
-const process = await client.process.retrieve(0);
+const response = await client.process.retrieveUserRequest(0);
 ```
 
 ### Request & Response types
@@ -41,7 +41,7 @@ const client = new Deco({
   apiKey: process.env['DECO_API_KEY'], // This is the default and can be omitted
 });
 
-const process: unknown = await client.process.retrieve(0);
+const response: unknown = await client.process.retrieveUserRequest(0);
 ```
 
 Documentation for each method, request param, and response field are available in docstrings and will appear on hover in most modern editors.
@@ -54,7 +54,7 @@ a subclass of `APIError` will be thrown:
 
 <!-- prettier-ignore -->
 ```ts
-const process = await client.process.retrieve(0).catch(async (err) => {
+const response = await client.process.retrieveUserRequest(0).catch(async (err) => {
   if (err instanceof Deco.APIError) {
     console.log(err.status); // 400
     console.log(err.name); // BadRequestError
@@ -94,7 +94,7 @@ const client = new Deco({
 });
 
 // Or, configure per-request:
-await client.process.retrieve(0, {
+await client.process.retrieveUserRequest(0, {
   maxRetries: 5,
 });
 ```
@@ -111,7 +111,7 @@ const client = new Deco({
 });
 
 // Override per-request:
-await client.process.retrieve(0, {
+await client.process.retrieveUserRequest(0, {
   timeout: 5 * 1000,
 });
 ```
@@ -134,13 +134,15 @@ Unlike `.asResponse()` this method consumes the body, returning once it is parse
 ```ts
 const client = new Deco();
 
-const response = await client.process.retrieve(0).asResponse();
+const response = await client.process.retrieveUserRequest(0).asResponse();
 console.log(response.headers.get('X-My-Header'));
 console.log(response.statusText); // access the underlying Response object
 
-const { data: process, response: raw } = await client.process.retrieve(0).withResponse();
+const { data: response, response: raw } = await client.process
+  .retrieveUserRequest(0)
+  .withResponse();
 console.log(raw.headers.get('X-My-Header'));
-console.log(process);
+console.log(response);
 ```
 
 ### Logging
@@ -220,7 +222,7 @@ parameter. This library doesn't validate at runtime that the request matches the
 send will be sent as-is.
 
 ```ts
-client.process.retrieve({
+client.process.retrieveUserRequest({
   // ...
   // @ts-expect-error baz is not yet public
   baz: 'undocumented option',
