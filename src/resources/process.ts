@@ -14,8 +14,10 @@ export class Process extends APIResource {
   }
 }
 
-export type ProcessRetrieveUserRequestResponse = unknown;
+export type ProcessRetrieveUserRequestResponse = unknown
 
 export declare namespace Process {
-  export { type ProcessRetrieveUserRequestResponse as ProcessRetrieveUserRequestResponse };
+  export {
+    type ProcessRetrieveUserRequestResponse as ProcessRetrieveUserRequestResponse
+  };
 }
