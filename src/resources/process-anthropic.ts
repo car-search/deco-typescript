@@ -14,10 +14,8 @@ export class ProcessAnthropic extends APIResource {
   }
 }
 
-export type ProcessAnthropicRetrieveResponse = unknown
+export type ProcessAnthropicRetrieveResponse = unknown;
 
 export declare namespace ProcessAnthropic {
-  export {
-    type ProcessAnthropicRetrieveResponse as ProcessAnthropicRetrieveResponse
-  };
+  export { type ProcessAnthropicRetrieveResponse as ProcessAnthropicRetrieveResponse };
 }
