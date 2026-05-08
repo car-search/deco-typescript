@@ -1,5 +1,26 @@
 # Changelog
 
+## 0.3.0 (2026-05-08)
+
+Full Changelog: [v0.2.0...v0.3.0](https://github.com/car-search/deco-typescript/compare/v0.2.0...v0.3.0)
+
+### Features
+
+* support setting headers via env ([dfc05d3](https://github.com/car-search/deco-typescript/commit/dfc05d34e2c471f0748e599735e35fd6e3b46a7e))
+
+
+### Chores
+
+* **ci:** skip lint on metadata-only changes ([b7c14b2](https://github.com/car-search/deco-typescript/commit/b7c14b2cfc050887f810f9ec8c7876227e5700a5))
+* **format:** run eslint and prettier separately ([0e95aca](https://github.com/car-search/deco-typescript/commit/0e95aca7a4730203c5f89cccee1127066cc4c3b8))
+* **formatter:** run prettier and eslint separately ([a6b9b42](https://github.com/car-search/deco-typescript/commit/a6b9b4280eef75ac6d75ff8424377e9ebc91052f))
+* **internal:** codegen related update ([26a3fe8](https://github.com/car-search/deco-typescript/commit/26a3fe8ba9f791d3cb75ede7cd3034681da78910))
+* **internal:** codegen related update ([17d9d77](https://github.com/car-search/deco-typescript/commit/17d9d77ddd5239edcd4f12e48ace34cbfff0b826))
+* **internal:** more robust bootstrap script ([b3264a8](https://github.com/car-search/deco-typescript/commit/b3264a8cf801dd7b291dfbdff74eb68452fe847d))
+* **internal:** tweak CI branches ([02b851f](https://github.com/car-search/deco-typescript/commit/02b851fb95513eb054db505a0b8cb8fa5d278668))
+* **internal:** update gitignore ([34bfa32](https://github.com/car-search/deco-typescript/commit/34bfa32573c22e97a4fa307864e83dcf7e1bb379))
+* redact api-key headers in debug logs ([cc8b16f](https://github.com/car-search/deco-typescript/commit/cc8b16f36ac37a1954e9a8d16540db18bcf1a237))
+
 ## 0.2.0 (2026-03-12)
 
 Full Changelog: [v0.1.0...v0.2.0](https://github.com/car-search/deco-typescript/compare/v0.1.0...v0.2.0)
